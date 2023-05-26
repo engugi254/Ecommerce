@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>E-commerce Site</title>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div id="top-nav">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Customer Service</a></li>
+                        <li><a href="">Gift Cards</a></li>
+                        <!-- <li><a href="cart.html">Cart</a></li> -->
+                        <!-- <li><a href="#" id="cart">Cart </a><span id="cartCount">0</span>
+                        </li> -->
+    
+                    </ul>
+                </nav>
+            </div>
+            
+            
+            <div class="details">
+                <div class="cart">
+                    <div id="cartCount" onclick="toggleCart()"><i class="fas fa-cart-arrow-down"></i>Cart(0)</div>
+                </div>
+                <div class="user">
+                
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <!-- <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" width="125px"> -->
+
+        </div>
+
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Best Online Store</h1>
+            
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <h4>Check out the Latest Products</h4>
+        <div class="products-container" id="products"></div>
+
+    </div>
+
+    <div class="sidenav" id="cartContainer" style="display: none;">
+        <a class ="close" href="#" onclick="toggleCart()">
+            Close</a>
+        <div id="cart"></div>
+        <div id="cartTotal"></div>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <div id="productPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeProductPopup()">&times;</span>
+            <div class="slideshow-buttons">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+            <p class="pick">Full Size</p>
+            <div class="sizes">
+                
+            </div>
+            <div id="popupProduct"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
